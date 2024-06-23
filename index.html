@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Vision Language Models are Easily Distracted in Short and Long Contexts"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+        Vision Language Models are Easily Distracted in Short and Long Contexts
+    </title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link rel="stylesheet" href="./static/css/index.css" />
+    <link rel="icon" href="./static/images/emoji_u1f419.svg" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+    <script
+      type="text/javascript"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./static/js/sort-table.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-3 publication-title is-bold">
+                Losing Visual Needles in Image Haystacks: Vision Language Models
+                are Easily Distracted in Short and Long Contexts
+              </h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="">Aditya Sharma</a>*,</span
+                >
+                <span class="author-block">
+                  <a href="">Michael Saxon</a>*,</span
+                >
+                <span class="author-block">
+                  <a href="">William Yang Wang</a>
+                </span>
+              </div>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"
+                  >University of California, Santa Barbara</span
+                >
+              </div>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">*Equal contribution</span>
+              </div>
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a
+                      href=""
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a
+                      href=""
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code (coming soon)</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a
+                      href=""
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fa fa-database"></i>
+                      </span>
+                      <span>Dataset</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img src="./static/images/teaser.png" style="display: block" />
+          <p>
+            The impact of <b>visual context</b> on vision-language models (VLMs) in our modified, 
+            multi-image versions of the <b>OK-VQA</b>, <b>MMStar</b>, and <b>MMBench</b> evaluation benchmarks. 
+            <i>Distractor images</i> around the target image increase the <i>visual context length</i> 
+            needed to answer the questions. VLM performance exhibits an exponential decay against 
+            distractor count, evident in both <b>single composed (cmp)</b> and <b>multiple interleaved (int)</b> input image configurations. 
+          </p>
+        </div>
+      </div>
+    </section>
+
+ <section class="hero">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Abstract</h2>
+              <div class="content has-text-justified">
+                <p>
+                  We present <b>LoCoVQA</b>, a dynamic benchmark generator for evaluating long-context 
+                  reasoning in vision language models (VLMs). <b>LoCoVQA</b> augments test examples for 
+                  mathematical reasoning, VQA, and character recognition tasks with increasingly long 
+                  <i>visual contexts</i> composed of both in-distribution and out-of-distribution <i>distractor images</i>.
+                </p>
+                <p>
+                  Across these tasks, a diverse set of VLMs rapidly lose performance as the visual 
+                  context length grows, often exhibiting a striking exponential decay trend. This test
+                  assesses how well VLMs can ignore irrelevant information when answering queries—a task 
+                  that is quite easy for language models (LMs) in the text domain—demonstrating that 
+                  current state-of-the-art VLMs lack this essential capability for many long-context applications.  
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+    
+    </footer>
+  </body>
+</html>
